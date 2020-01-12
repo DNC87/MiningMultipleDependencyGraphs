@@ -22,14 +22,14 @@ The code has been developed under version 3.5.1 of R. It is recommended to execu
 
 Note that we use the following expression to automatically set the path where our files are located:
 
-```
+```R
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 ``` 
 
 This expression makes use of a proprietary RStudio package (i.e., ``rstudioapi``). In case you have problems loading or using it, please define your working directory with the following expression using the local path in your computer where the source files of our program are located:
 
-```
-setwd('<path_to_files>')
+```R
+setwd('/path/to/files/')
 ```
 
 ## How to get the results of the experiments?
@@ -38,25 +38,25 @@ After the execution of the ``main.R`` file, the variable the results of the expe
 For example, for experiment 1 (i.e., models learned from the trials provided by expert surgeons for a suture exercise), we can consult the different results obtained from our algorithm during the training phase as follows:
 
 
-```
-__Accessing the mined models__
-The models obtained are stored within the ``MMDG$mined_models`` structure. In order to plot the dependency graph of the first model obtained by our algorithm, we can use the following expression:
+```R
+# Accessing the mined models #
+# The models obtained are stored within the MMDG$mined_models structure. In order to plot the dependency graph of the first model obtained by our algorithm, we can use the following expression:
 
 plot_visnetwork(algorithms_results$exp1$MMDG$mined_models$thresh_6_A)
 ```
 ![Model plot](/figures/model.png)
 
 ```
-__Accessing to aggregated graphs__
-The aggregate graphs generated in each iteration will be found within ``MMDG$aggr_graphs`` structure. In the same manner, we can plot one of these graphs by using this code:
+# Accessing to aggregated graphs #
+# The aggregate graphs generated in each iteration will be found within MMDG$aggr_graphs structure. In the same manner, we can plot one of these graphs by using this code:
 
 plot_visnetwork(algorithms_results$exp1$MMDG$aggr_graphs$aggr_6_A)
 ```
 ![Aggr plot](/figures/aggr_graph.png)
 
 ```
-__Accessing to fitness results__
-The fitness results of the models obtained during the training phase can be consulted as follows:
+# Accessing to fitness results #
+# The fitness results of the models obtained during the training phase can be consulted as follows:
 
 algorithms_results$exp1$MMDG$df_cat_graphs
 ```
@@ -74,9 +74,9 @@ algorithms_results$exp1$MMDG$df_cat_graphs
 | D004 |	C |
 | E004 |	C |
 
-```
-__Fitness results on unseen examples__
-To access the fitness results on new trials you can do the following:
+```R
+# Fitness results on unseen examples #
+# To access the fitness results on new trials you can do the following:
 
 algorithms_results$exp1$apply_models$df_cat_graphs
 
