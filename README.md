@@ -46,7 +46,7 @@ plot_visnetwork(algorithms_results$exp1$MMDG$mined_models$thresh_6_A)
 ```
 ![Model plot](/figures/model.png)
 
-```
+```R
 # Accessing to aggregated graphs #
 # The aggregate graphs generated in each iteration will be found within MMDG$aggr_graphs structure. In the same manner, we can plot one of these graphs by using this code:
 
@@ -54,7 +54,7 @@ plot_visnetwork(algorithms_results$exp1$MMDG$aggr_graphs$aggr_6_A)
 ```
 ![Aggr plot](/figures/aggr_graph.png)
 
-```
+```R
 # Accessing to fitness results #
 # The fitness results of the models obtained during the training phase can be consulted as follows:
 
