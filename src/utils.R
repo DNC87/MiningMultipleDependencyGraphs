@@ -59,7 +59,7 @@ igraph_to_visnetwork <- function(graph){
 }
 
 # My function to plot igraph graphs with visnetwork with a nice presentantion.
-plot_visnetwork <- function(graph, name, save=F){
+plot_visnetwork <- function(graph, name="", save=F){
   visgraph <- igraph_to_visnetwork(graph)
   visnetwork <-visNetwork(nodes=visgraph$nodes, edges=visgraph$edges, main=name)
   if(save == T){
