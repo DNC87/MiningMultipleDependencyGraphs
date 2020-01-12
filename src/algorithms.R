@@ -34,7 +34,7 @@ MMDG_algorithm <- function(graphs){
     # It creates some interesting metadata about the model obtained. Also, it adds the produced graphs to the global lists of results.
     model_graph <- add_summary_data_to_graph(model_graph, category=id_model, type="theta", meta="") # Add the topology information to the graph as metadata
     aggr_graphs[[as.character(paste(c("aggr", min(E(model_graph)$weight), id_model), collapse="_"))]] <- aggr_graph
-    mined_models[[as.character(paste(c("thresh", min(E(model_graph)$weight), id_model), collapse="_"))]] <- model_graph
+    mined_models[[as.character(paste(c("thresh", min(E(model_graph)$weight), id_model), collapse="_"))]] <- delete_edge_attr(model_graph, "weight")
     
     # Add the current category to graphs which fulfil the connectivity condition
     df_cat_graphs$category[df_cat_graphs$ID %in% cat_graphs] <- id_model
