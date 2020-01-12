@@ -119,4 +119,4 @@ The application can be found at [shinyapp link](https://safe-tools.dsic.upv.es/s
 This project is licensed under the MIT License - see the [`License.md`](LICENSE.md) file for details
 
 ## Acknowledges
-This work has been partially supported by the EU (FEDER) and the Spanish MINECOunder grants TIN2014-61716-EXP (SUPERVASION) and RTI2018-094403-B-C32, and byGeneralitat Valenciana under grant PROMETEO/2019/098. David Nieves is also supportedby the Spanish MINECO under FPI grant (BES-2016-078863).
+This work has been partially supported by the EU (FEDER) and the Spanish MINECO under grants TIN2014-61716-EXP (SUPERVASION) and RTI2018-094403-B-C32, and by Generalitat Valenciana under grant PROMETEO/2019/098. David Nieves is also supported by the Spanish MINECO under FPI grant (BES-2016-078863).
