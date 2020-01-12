@@ -59,6 +59,7 @@ __Accessing to fitness results__
 The fitness results of the models obtained during the training phase can be consulted as follows:
 
 algorithms_results$exp1$MMDG$df_cat_graphs
+```
 
 | Trial ID | Model |
 | -------- | ----- |
@@ -72,13 +73,15 @@ algorithms_results$exp1$MMDG$df_cat_graphs
 | D002 |	C | 
 | D004 |	C |
 | E004 |	C |
-```
+
 ```
 __Fitness results on unseen examples__
 To access the fitness results on new trials you can do the following:
 
 algorithms_results$exp1$apply_models$df_cat_graphs
 
+```  
+| Trial ID | Model |
 | -------- | ----- |
 | C002 | 	- |
 | F001 |	- |
@@ -109,7 +112,7 @@ algorithms_results$exp1$apply_models$df_cat_graphs
 | I003 |	C |
 | I004 |	C |
 | I005 |	C |
-```  
+
 ## Shiny application
 The application can be found at [shinyapp link](https://safe-tools.dsic.upv.es/shiny/SurgicalWorkflowMining). The functionalities available in this application are these: Task Description(1) shows the explanatory information of the task. Trial Visualisation(2) provides the view/detail of each recorded trial. Learn Workflow includes the selection of examples to extract models (3), view/detail of learned workflows (4), and statistics about coverage (5)and removal of edges and vertices (6) during the learning process.
 
